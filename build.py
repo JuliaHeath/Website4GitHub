@@ -1,11 +1,49 @@
-filenames = "templates/top.html" + "content/index.html" + "templates/bottom.html" 
-open("docs/index.html", "w+").write(filenames) 
+a = open("templates/top.html").read()
+b = open("content/index.html").read()
+c = open("templates/bottom.html").read()
 
-filenames = "templates/top.html" + "content/blog.html" + "templates/bottom.html" 
-open("docs/blog.html", "w+").write(filenames) 
+filenames1 = a + b + c
 
-filenames = "templates/top.html" + "content/projects.html" + "templates/bottom.html" 
-open("docs/projects.html", "w+").write(filenames) 
+open("docs/index.html", "w+").write(filenames1) 
 
-filenames = "templates/top.html" + "content/contact.html" + "templates/bottom.html" 
-open("docs/contact.html", "w+").write(filenames) 
+
+
+
+
+
+
+d = open("content/blog.html").read()
+
+filenames2 = a + d + c
+
+open("docs/blog.html", "w+").write(filenames2) 
+
+
+
+
+
+
+
+e = open("content/projects.html").read()
+
+
+filenames3 = a + e + c
+
+open("docs/projects.html", "w+").write(filenames3) 
+
+
+
+
+
+
+f = open("content/contact.html").read()
+
+
+filenames4 = a + f + c
+
+open("docs/contact.html", "w+").write(filenames4) 
+
+
+
+
+
