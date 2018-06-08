@@ -27,9 +27,9 @@ def main():
 
     content_contact = open("content/contact.html").read()
 
-    contact = templates_top_content_bottomp + f + c
+    contact = templates_top_content_bottomp + content_contact
 
-    open("docs/contact.html", "w+").write(filenames4) 
+    open("docs/contact.html", "w+").write(contact) 
     
 main()
 
